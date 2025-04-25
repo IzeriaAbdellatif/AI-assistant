@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ollama Chatbot Test</title>
+</head>
+<body style="font-family: sans-serif; margin: 40px;">
+  <h1>Ask the Ollama Chatbot</h1>
+  <form method="post">
+    <input type="text" name="question" style="width: 400px;" placeholder="Ask a question..." required>
+    <button type="submit">Ask</button>
+  </form>
+
+  {% if answer %}
+    <h2>Response:</h2>
+    <p>{{ answer }}</p>
+  {% endif %}
+</body>
+</html>
